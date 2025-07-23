@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All-in-One Webpage</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>🌐 Welcome to the All-in-One Demo Page</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#form">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About This Page</h2>
+    <p>This page demonstrates key HTML, CSS, and JavaScript features all in one place.</p>
+    <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZULgn7jR5IH6sCNm5PjEnH1xTaSLFJLmx8w&s alt="Sample Image">
+  </section>
+
+  <section id="features">
+    <h2>HTML Features</h2>
+    <ul>
+      <li>Paragraphs, Lists, Links, Tables, Forms</li>
+      <li>Buttons, Images, Headings</li>
+      <li>Semantic Tags: header, section, article</li>
+    </ul>
+
+    <h3>Table Example</h3>
+    <table>
+      <tr>
+        <th>Name</th><th>Role</th>
+      </tr>
+      <tr>
+        <td>Wingston</td><td>Developer</td>
+      </tr>
+      <tr>
+        <td>John</td><td>Designer</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="form">
+    <h2>Contact Us</h2>
+    <form onsubmit="return validateForm()">
+      <label>Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required><br>
+      <label>Email:</label>
+      <input type="email" id="email" placeholder="Enter your email" required><br>
+      <label>Message:</label><br>
+      <textarea id="message" placeholder="Your message" required></textarea><br>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Interactive Section</h2>
+    <button onclick="changeContent()">Click to Change Text</button>
+    <p id="dynamicText">This is some dynamic text!</p>
+
+    <button onclick="showModal()">Show Model</button>
+  </section>
+
+  <footer>
+    <p>&copy; Task1 WebPage Demo</p>
+  </footer>
+
+  <!-- Modal -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="hideModal()">&times;</span>
+      <h3>JavaScript Model</h3>
+      <p>This model was triggered with JavaScript.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
